@@ -14,16 +14,15 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("success");
   }
 
   return (
     <form className="App" onSubmit={handleSubmit}>
       <h1>Login Page</h1>
       <label>Username:</label>
-      <input type="text" value={value} onChange={handleUserChange} required></input> <br />
+      <input type="text" placeholder="username" onChange={handleUserChange} required></input> <br />
       <label>Password:</label>
-      <input type="password" value={password} onChange={handlePasswordChange} required></input> <br />
+      <input type="password" placeholder="password" onChange={handlePasswordChange} required></input> <br />
       <button type="submit">Submit</button> 
     </form>
   );
